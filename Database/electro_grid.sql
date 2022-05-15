@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2022 at 08:55 AM
+-- Generation Time: May 15, 2022 at 06:16 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -38,7 +38,8 @@ CREATE TABLE `complaint` (
 --
 
 INSERT INTO `complaint` (`cID`, `type`, `cdesc`) VALUES
-(99887655, 'Power cut', 'No electricity since 12 hours');
+(456777659, 'Power cut ', 'No electricity since 12 hours'),
+(685948930, 'power failure', 'No electricity');
 
 -- --------------------------------------------------------
 
@@ -63,7 +64,9 @@ CREATE TABLE `consumer` (
 --
 
 INSERT INTO `consumer` (`consumerNo`, `accountNo`, `fname`, `gender`, `nic`, `number`, `email`, `password`, `address`) VALUES
-(29, 456777659, 'Ravi Jayasinghe', 'Male', '199087655678', '7655678899', 'ravii@gmail.com', 'acc123qq', 'Kandy, Peradeniya');
+(29, 456777659, 'Ravi Jayasinghe', 'Male', '199087655678', '7655678899', 'ravii@gmail.com', 'acc123qq', 'Kandy, Peradeniya'),
+(31, 685948930, 'Ravi Amarasinghe', 'Male', '199988766666', '7688666667', 'Ravi123@gmail.com', 'acc984993', 'Trinco, malpara'),
+(32, 646675837, 'Palak Ranaweera', 'Female', '19987488933', '768493749', 'Palakk@gmail.com', 'acc132553', 'Kurunegala, jayamawatha');
 
 -- --------------------------------------------------------
 
@@ -88,7 +91,9 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`empNo`, `empID`, `fname`, `gender`, `nic`, `number`, `email`, `password`, `address`) VALUES
-(6, 12, 'Tanasha Jayasinghe', 'Female', '199765566789', '76544567880', 'Tana123@gmail.com', 'E0012992', 'Kurunegala, Yanthampalawa');
+(6, 12, 'Tanasha Jayasinghe', 'Female', '199765566789', '76544567880', 'Tana123@gmail.com', 'E0012992', 'Kurunegala, Yanthampalawa'),
+(7, 34, 'Sachin perera', 'Male', '19004857849', '7654446770', 'Sacha@gmail.com', 'e0034hfn', 'Keleniya, street 9'),
+(8, 98, 'Dilini walgama', 'Female', '19958598496', '768463838', 'Dilli@gmail.com', 'E0098yyhh', 'Galla, Talawatte');
 
 --
 -- Indexes for dumped tables
@@ -121,13 +126,13 @@ ALTER TABLE `employee`
 -- AUTO_INCREMENT for table `consumer`
 --
 ALTER TABLE `consumer`
-  MODIFY `consumerNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `consumerNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `empNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `empNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
