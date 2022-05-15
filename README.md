@@ -39,4 +39,6 @@ Client-components: jQuery, Ajax for DC.
 <br/>
 <br/>
 
-<img src="images/eg.png" width = "800" height = "500" >
+<img src="images/eg1.png" width = "1000">
+<img src="images/eg2.png" width = "1000">
+<img src="images/eg3.png" width = "1000">
