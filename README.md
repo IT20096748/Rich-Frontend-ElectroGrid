@@ -32,4 +32,4 @@ Client-components: jQuery, Ajax for DC.
 <br/>
 <br/>
 
-<img src="images/electrogrid.png" width = "850" height = "500" >
+<img src="images/eg.png" width = "850" height = "500" >
